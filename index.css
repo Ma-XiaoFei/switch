@@ -38,7 +38,18 @@
     background-color: #3095ef;
     border: .2px solid #3095ef;
 }
-
+.switch-label.red input[type=checkbox]:checked+.checkbox {
+    background-color: red;
+    border: .2px solid red;
+}
+.switch-label.green input[type=checkbox]:checked+.checkbox {
+    background-color: green;
+    border: .2px solid green;
+}
+.switch-label.pink input[type=checkbox]:checked+.checkbox {
+    background-color: rgb(223, 37, 192);
+    border: .2px solid rgb(223, 37, 192);
+}
 .switch-label input[type=checkbox]:checked+.checkbox::after {
     transform: translateX(20px);
     -webkit-transform: translateX(20px);

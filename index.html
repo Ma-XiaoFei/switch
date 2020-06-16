@@ -5,17 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>switch</title>
-   <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+    li{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+    
+    }
+    li div{
+        flex: 1;
+    }
+    li label{
+        width: 100px;
+    }
+    </style>
 </head>
 
 <body>
 
-<!-- switch开关HTML结构 -->
+    <!-- switch开关HTML结构 -->
+    <ul>
+        <Li> 
+            <div class="list_item">
+               选择
+            </div>
+            <label class="switch-label">
+                <input type="checkbox" checked name="test">
+                <div class="checkbox"></div>
+            </label>
+        </Li>
+        <Li> 
+            <div class="list_item">
+                选择
+             </div>
+            <label class="switch-label red">
+                <input type="checkbox" name="test">
+                <div class="checkbox"></div>
+            </label>
+        </Li>
+        <Li> 
+            <div class="list_item">
+                选择
+             </div>
+            <label class="switch-label green">
+                <input type="checkbox" name="test">
+                <div class="checkbox"></div>
+            </label>
+        </Li>
+        <Li> 
+            <div class="list_item">
+                选择
+             </div>
+            <label class="switch-label pink">
+                <input type="checkbox" name="test">
+                <div class="checkbox"></div>
+            </label>
+        </Li>
+    </ul>
 
-    <label class="switch-label">
-        <input type="checkbox" name="test">
-        <div class="checkbox"></div>
-    </label>
 
     <script>
         document.querySelector('input[name=test]').onchange = function () {
